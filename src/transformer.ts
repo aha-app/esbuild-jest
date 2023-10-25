@@ -4,8 +4,13 @@ import { Config } from '@jest/types'
 import babelJest from 'babel-jest'
 
 const { process } = babelJest.createTransformer({
-  plugins: [ "@babel/plugin-transform-modules-commonjs" ],
-  parserOpts: { 
+  presets: [
+    "@babel/preset-react"
+  ],
+  plugins: [
+    "@babel/plugin-transform-modules-commonjs"
+  ],
+  parserOpts: {
     plugins: ["jsx", "typescript"],
   }
 })
