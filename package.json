@@ -1,6 +1,6 @@
 {
-  "name": "esbuild-jest",
-  "version": "0.5.0",
+  "name": "@aha-app/esbuild-jest",
+  "version": "0.5.1",
   "description": "Jest plugin to use esbuild for transformation",
   "main": "esbuild-jest.js",
   "module": "esbuild-jest.es.js",
@@ -29,6 +29,7 @@
     "esbuild": ">=0.9.3"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.22.15",
     "@babel/preset-typescript": "^7.13.0",
     "@swc/core": "^1.2.50",
     "@types/jest": "^26.0.21",
